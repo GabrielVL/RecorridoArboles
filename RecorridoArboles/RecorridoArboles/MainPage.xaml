@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RecorridoArboles.MainPage">
+
+    <StackLayout>
+        <Label Text="Introduzca el nuevo dato al arbol" FontSize="25" HeightRequest="50" HorizontalTextAlignment="Center"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Entry x:Name="NuevoNodo" FontSize="Medium" Keyboard="Numeric" Grid.Row="2" Grid.Column="2" />
+            <Button x:Name="AddButton" Text="Agregar al arbol" Grid.Row="3" Grid.Column="2" WidthRequest="120" HeightRequest="75"/>
+            <Label Text="Tipo de recorrido" Grid.Row="4" Grid.Column="2" FontSize="20"/>
+            <Button x:Name="InorderButton" Text="Inorden" Grid.Row="5" Grid.Column="1"/>
+            <Button x:Name="PostorderButton" Text="Postorden" Grid.Row="5" Grid.Column="2"/>
+            <Button x:Name="PreorderButton" Text="Preorden" Grid.Row="5" Grid.Column="3" WidthRequest="100"/>
+            <Label x:Name="LabelRecorrido" Text="Tipo de recorrido" Grid.Row="6" Grid.Column="2" FontSize="20"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
