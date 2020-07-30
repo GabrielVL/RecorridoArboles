@@ -9,6 +9,7 @@ namespace RecorridoArboles
 		public int key;
 		public Node left;
 		public Node right;
+		public string direction;
 
 		public Node(int item)
 		{
@@ -38,30 +39,38 @@ namespace RecorridoArboles
 			}
 			else
 			{
-				move(newNode, root, side);
+				if (side == "right")
+                {
+					root.direction = "right";
+					move(newNode, root, root.right);
+				}
+				else if (side == "left")
+                {
+					root.direction = "left";
+					move(newNode, root, root.left);
+				}
 			}
 		}
 
-		Node move(Node newNode, Node nextNode, String side)
+		Node move(Node newNode, Node parentNode, Node childNode)
 		{
 			Node direction = new Node(0);
-			if (newNode != null)
+			if (childNode != null)
 			{
-				if (side == "right")
-				{
-					direction = newNode.right;
-				}
-				else if (side == "left")
-				{
-					direction = newNode.left;
-				}
 				return direction;
 			}
 			else
 			{
-				nextNode = newNode;
+				if (parentNode.direction == "right")
+                {
+					parentNode.right = newNode;
+                }
+				else if (parentNode.direction == "left")
+                {
+					parentNode.left = newNode;
+				}
+				return null;
 			}
-			return direction;
 		}
 
 		void printPostorder(Node node)
