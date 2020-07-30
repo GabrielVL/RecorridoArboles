@@ -4,140 +4,114 @@ using System.Text;
 
 namespace RecorridoArboles
 {
-		public class Node
-	{
-		public int key;
-		public Node left;
-		public Node right;
-		public string direction;
+    public class Node
+    {
+        public int key;
+        public Node left;
+        public Node right;
+        public string direction;
 
-		public Node(int item)
-		{
-			key = item;
-			left = null;
-			right = null;
-		}
-		
-	}
+        public Node(int item)
+        {
+            key = item;
+            left = null;
+            right = null;
+        }
 
-		public class ArbolBinario
-		{
-		public Node root;
-		public StringBuilder order = new StringBuilder();		 
+    }
 
-		public	ArbolBinario()
-		{
-			root = null;
-		}
+    public class BinaryTree
+    {
+        public Node root;
+        public List<String> order = new List<String>();
+        public int cantidad = -1;
+        public StringBuilder orderValue = new StringBuilder();
 
-		public void addNode(int data, String side)
-		{
-			Node newNode = new Node(data);
-			if (root == null)
-			{
-				root = newNode;
-				return;
-			}
-			else
-			{
-                Node parent = new Node(data);
-				Node child;
-                if (side == "right")
+        public BinaryTree()
+        {
+            root = null;
+        }
+
+        public Boolean contains(String value)
+        {
+            Boolean result = false;
+            foreach (string i in order)
+            {
+                if (int.Parse(value) == (int.Parse(i)))
                 {
-					root.direction = "right";
-                    child = parent.right;
-                    move(newNode, parent, child);
-				}
-				else if (side == "left")
-                {
-					root.direction = "left";
-					child = parent.left;
-                    move(newNode, parent, root.left);
-				}
-			}
-		}
-
-		public Node move(Node newNode, Node parentNode, Node childNode)
-		{
-			Node direction = new Node(0);
-			if (childNode != null)
-			{
-				return direction;
-			}
-			else
-			{
-				if (parentNode.direction == "right")
-                {
-					parentNode.right = newNode;
+                    result = true;
+                    break;
                 }
-				else if (parentNode.direction == "left")
-                {
-					parentNode.left = newNode;
-				}
-				return null;
-			}
-		}
 
-		 void printPostorder(Node node)
-		{
-			if (node == null)
-				return;
+            }
+            return result;
+        }
+        public void insert(int elemento)
+        {
+            if (root != null)
+            {
+                root = insert(elemento, root);
+            }
+            else
+            {
+                root = new Node(elemento);
+            }
 
-			printPostorder(node.left);
-			printPostorder(node.right);
-			order.Append(node.key + " ");
-		}
+        }
 
-		public void printInorder(Node node)
-		{
-			if (node == null)
-				return;
 
-			printInorder(node.left);
-			order.Append(node.key + " ");
-			printInorder(node.right);
-		}
+        private Node insert(int elemento, Node nodo)
+        {
 
-		public void printPreorder(Node node)
-		{
-			if (node == null)
-				return;
+            if (nodo == null)
+            {
 
-			order.Append(node.key + " ");
-			printPreorder(node.left);
-			printPreorder(node.right);
-		}
+                return new Node(elemento);
+            }
+            if (elemento < nodo.key)
+            {
+                nodo.left = insert(elemento, nodo.left);
+            }
+            else if (elemento > nodo.key)
+            {
+                nodo.right = insert(elemento, nodo.right);
+            }
 
-		public void printPostorder() { printPostorder(root); }
-		public void printInorder() { printInorder(root); }
-		public void printPreorder() { printPreorder(root); }
+            return nodo;
+        }
 
-		static public void Main(String[] args)
-		{
-			ArbolBinario tree = new ArbolBinario();
-			tree.root = new Node(1);
-			tree.root.left = new Node(2);
-			tree.root.right = new Node(3);
-			tree.root.left.left = new Node(4);
-			tree.root.left.right = new Node(5);
+        public void printPostorder(Node node)
+        {
+            if (node == null)
+                return;
 
-			Console.WriteLine("Preorder traversal " +
-							"of binary tree is ");
-			tree.printPreorder();
-			Console.WriteLine(tree.order);
-			tree.order = new StringBuilder();
+            printPostorder(node.left);
+            printPostorder(node.right);
+            orderValue.Append(node.key + " ");
+        }
 
-			Console.WriteLine("\nInorder traversal " +
-								"of binary tree is ");
-			tree.printInorder();
-			Console.WriteLine(tree.order);
-			tree.order = new StringBuilder();
+        public void printInorder(Node node)
+        {
+            if (node == null)
+                return;
 
-			Console.WriteLine("\nPostorder traversal " +
-								"of binary tree is ");
-			tree.printPostorder();
-			Console.WriteLine(tree.order);
-			tree.order = new StringBuilder();
-		}
-	}
+            printInorder(node.left);
+            orderValue.Append(node.key + " ");
+            printInorder(node.right);
+        }
+
+        public void printPreorder(Node node)
+        {
+            if (node == null)
+                return;
+
+            orderValue.Append(node.key + " ");
+            printPreorder(node.left);
+            printPreorder(node.right);
+        }
+
+        public void printPostorder() { printPostorder(root); }
+        public void printInorder() { printInorder(root); }
+        public void printPreorder() { printPreorder(root); }
+    }
 }

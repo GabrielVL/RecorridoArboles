@@ -28,15 +28,14 @@
 
 
             <Entry x:Name="NuevoNodo" FontSize="Medium" Keyboard="Numeric" Grid.Row="2" Grid.Column="2" WidthRequest="25"/>
-            <Button x:Name="AddButton" Text="Agregar al arbol" Grid.Row="3" Grid.Column="2" WidthRequest="120" HeightRequest="75" Clicked="Agregar"/>
-            <Button Text="Derecha" Grid.Row="3" Grid.Column="3" Clicked="Derecha" />
-            <Button Text="Izquierda" Grid.Row="3" Grid.Column="1" WidthRequest="98" Clicked="Izquierda"/>
+            <Button x:Name="AddButton" Text="Agregar al arbol" Grid.Row="3" Grid.Column="2" WidthRequest="120" HeightRequest="75" Clicked="Agregar"/>   
             <Label Text="Tipo de recorrido" Grid.Row="4" Grid.Column="2" FontSize="15"/>
-            <Button x:Name="InorderButton" Text="Inorden" Grid.Row="5" Grid.Column="1" Clicked="Inorder"/>
-            <Button x:Name="PostorderButton" Text="Postorden" Grid.Row="5" Grid.Column="2" Clicked="Postorder"/>
-            <Button x:Name="PreorderButton" Text="Preorden" Grid.Row="5" Grid.Column="3" WidthRequest="100" Clicked="Preorder"/>
-            <Label x:Name="LabelRecorrido" Text="Tipo de recorrido" Grid.Row="6" Grid.Column="2" FontSize="15"/>
-            
+            <Button Text="Inorden" Grid.Row="5" Grid.Column="1" Clicked="Inorder"/>
+            <Button Text="Postorden" Grid.Row="5" Grid.Column="2" Clicked="Postorder"/>
+            <Button Text="Preorden" Grid.Row="5" Grid.Column="3" WidthRequest="100" Clicked="Preorder"/>
+
+            <Label Text="Este es un arbol binario de busqueda, favor dibujar el arbol en una hoja, esto dado que no fue implementado un sistema para la visualizacion del mismo" Grid.Column="2" Grid.Row="7"/>
+
         </Grid>
 
         <Label x:Name="ResultadoRecorrido" Text="Aqui va el resultado" FontSize="25"/>
