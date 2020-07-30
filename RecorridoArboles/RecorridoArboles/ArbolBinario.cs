@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RecorridoArboles
 {
-	class Node
+		public class Node
 	{
 		public int key;
 		public Node left;
@@ -17,42 +17,47 @@ namespace RecorridoArboles
 			left = null;
 			right = null;
 		}
+		
 	}
 
-	class ArbolBinario
-	{
-		Node root;
-		StringBuilder order = new StringBuilder();
-		int profundidad;
+		public class ArbolBinario
+		{
+		public Node root;
+		public StringBuilder order = new StringBuilder();		 
 
-		ArbolBinario()
+		public	ArbolBinario()
 		{
 			root = null;
 		}
 
-		void addNode(int data, String side)
+		public void addNode(int data, String side)
 		{
 			Node newNode = new Node(data);
-			if (root != null)
+			if (root == null)
 			{
 				root = newNode;
+				return;
 			}
 			else
 			{
-				if (side == "right")
+                Node parent = new Node(data);
+				Node child;
+                if (side == "right")
                 {
 					root.direction = "right";
-					move(newNode, root, root.right);
+                    child = parent.right;
+                    move(newNode, parent, child);
 				}
 				else if (side == "left")
                 {
 					root.direction = "left";
-					move(newNode, root, root.left);
+					child = parent.left;
+                    move(newNode, parent, root.left);
 				}
 			}
 		}
 
-		Node move(Node newNode, Node parentNode, Node childNode)
+		public Node move(Node newNode, Node parentNode, Node childNode)
 		{
 			Node direction = new Node(0);
 			if (childNode != null)
@@ -73,7 +78,7 @@ namespace RecorridoArboles
 			}
 		}
 
-		void printPostorder(Node node)
+		 void printPostorder(Node node)
 		{
 			if (node == null)
 				return;
@@ -83,7 +88,7 @@ namespace RecorridoArboles
 			order.Append(node.key + " ");
 		}
 
-		void printInorder(Node node)
+		public void printInorder(Node node)
 		{
 			if (node == null)
 				return;
@@ -93,7 +98,7 @@ namespace RecorridoArboles
 			printInorder(node.right);
 		}
 
-		void printPreorder(Node node)
+		public void printPreorder(Node node)
 		{
 			if (node == null)
 				return;
@@ -103,9 +108,9 @@ namespace RecorridoArboles
 			printPreorder(node.right);
 		}
 
-		void printPostorder() { printPostorder(root); }
-		void printInorder() { printInorder(root); }
-		void printPreorder() { printPreorder(root); }
+		public void printPostorder() { printPostorder(root); }
+		public void printInorder() { printInorder(root); }
+		public void printPreorder() { printPreorder(root); }
 
 		static public void Main(String[] args)
 		{

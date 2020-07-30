@@ -7,7 +7,7 @@
              x:Class="RecorridoArboles.MainPage">
 
     <StackLayout>
-        <Label Text="Introduzca el nuevo dato al arbol" FontSize="25" HeightRequest="50" HorizontalTextAlignment="Center"/>
+        <Label Text="Introduzca el nuevo dato al arbol" FontSize="20" HeightRequest="50" WidthRequest="100" HorizontalTextAlignment="Center"/>
 
         <Grid>
             <Grid.RowDefinitions>
@@ -20,21 +20,27 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="10"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
 
-            <Entry x:Name="NuevoNodo" FontSize="Medium" Keyboard="Numeric" Grid.Row="2" Grid.Column="2" />
-            <Button x:Name="AddButton" Text="Agregar al arbol" Grid.Row="3" Grid.Column="2" WidthRequest="120" HeightRequest="75"/>
-            <Label Text="Tipo de recorrido" Grid.Row="4" Grid.Column="2" FontSize="20"/>
-            <Button x:Name="InorderButton" Text="Inorden" Grid.Row="5" Grid.Column="1"/>
-            <Button x:Name="PostorderButton" Text="Postorden" Grid.Row="5" Grid.Column="2"/>
-            <Button x:Name="PreorderButton" Text="Preorden" Grid.Row="5" Grid.Column="3" WidthRequest="100"/>
-            <Label x:Name="LabelRecorrido" Text="Tipo de recorrido" Grid.Row="6" Grid.Column="2" FontSize="20"/>
+            <Entry x:Name="NuevoNodo" FontSize="Medium" Keyboard="Numeric" Grid.Row="2" Grid.Column="2" WidthRequest="25"/>
+            <Button x:Name="AddButton" Text="Agregar al arbol" Grid.Row="3" Grid.Column="2" WidthRequest="120" HeightRequest="75" Clicked="Agregar"/>
+            <Button Text="Derecha" Grid.Row="3" Grid.Column="3" Clicked="Derecha" />
+            <Button Text="Izquierda" Grid.Row="3" Grid.Column="1" WidthRequest="98" Clicked="Izquierda"/>
+            <Label Text="Tipo de recorrido" Grid.Row="4" Grid.Column="2" FontSize="15"/>
+            <Button x:Name="InorderButton" Text="Inorden" Grid.Row="5" Grid.Column="1" Clicked="Inorder"/>
+            <Button x:Name="PostorderButton" Text="Postorden" Grid.Row="5" Grid.Column="2" Clicked="Postorder"/>
+            <Button x:Name="PreorderButton" Text="Preorden" Grid.Row="5" Grid.Column="3" WidthRequest="100" Clicked="Preorder"/>
+            <Label x:Name="LabelRecorrido" Text="Tipo de recorrido" Grid.Row="6" Grid.Column="2" FontSize="15"/>
+            
         </Grid>
+
+        <Label x:Name="ResultadoRecorrido" Text="Aqui va el resultado" FontSize="25"/>
+
     </StackLayout>
 
 </ContentPage>

@@ -1,0 +1,14 @@
+C:\Users\ExtremeTech\source\repos\lul\RecorridoArboles\RecorridoArboles\RecorridoArboles\bin\Debug\netstandard2.0\RecorridoArboles.deps.json
+C:\Users\ExtremeTech\source\repos\lul\RecorridoArboles\RecorridoArboles\RecorridoArboles\bin\Debug\netstandard2.0\RecorridoArboles.dll
+C:\Users\ExtremeTech\source\repos\lul\RecorridoArboles\RecorridoArboles\RecorridoArboles\bin\Debug\netstandard2.0\ref\RecorridoArboles.dll
+C:\Users\ExtremeTech\source\repos\lul\RecorridoArboles\RecorridoArboles\RecorridoArboles\bin\Debug\netstandard2.0\RecorridoArboles.pdb
+C:\Users\ExtremeTech\source\repos\lul\RecorridoArboles\RecorridoArboles\RecorridoArboles\obj\Debug\netstandard2.0\RecorridoArboles.csprojAssemblyReference.cache
+C:\Users\ExtremeTech\source\repos\lul\RecorridoArboles\RecorridoArboles\RecorridoArboles\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\ExtremeTech\source\repos\lul\RecorridoArboles\RecorridoArboles\RecorridoArboles\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\ExtremeTech\source\repos\lul\RecorridoArboles\RecorridoArboles\RecorridoArboles\obj\Debug\netstandard2.0\RecorridoArboles.AssemblyInfoInputs.cache
+C:\Users\ExtremeTech\source\repos\lul\RecorridoArboles\RecorridoArboles\RecorridoArboles\obj\Debug\netstandard2.0\RecorridoArboles.AssemblyInfo.cs
+C:\Users\ExtremeTech\source\repos\lul\RecorridoArboles\RecorridoArboles\RecorridoArboles\obj\Debug\netstandard2.0\RecorridoArboles.csproj.CoreCompileInputs.cache
+C:\Users\ExtremeTech\source\repos\lul\RecorridoArboles\RecorridoArboles\RecorridoArboles\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\ExtremeTech\source\repos\lul\RecorridoArboles\RecorridoArboles\RecorridoArboles\obj\Debug\netstandard2.0\RecorridoArboles.dll
+C:\Users\ExtremeTech\source\repos\lul\RecorridoArboles\RecorridoArboles\RecorridoArboles\obj\Debug\netstandard2.0\ref\RecorridoArboles.dll
+C:\Users\ExtremeTech\source\repos\lul\RecorridoArboles\RecorridoArboles\RecorridoArboles\obj\Debug\netstandard2.0\RecorridoArboles.pdb

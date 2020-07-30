@@ -1969,24 +1969,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gvl19\\.nuget\\packages\\": {},
+    "C:\\Users\\ExtremeTech\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "S:\\Programming\\VisualStudio\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.Android\\RecorridoArboles.Android.csproj",
+      "projectUniqueName": "C:\\Users\\ExtremeTech\\source\\repos\\lul\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.Android\\RecorridoArboles.Android.csproj",
       "projectName": "RecorridoArboles.Android",
-      "projectPath": "S:\\Programming\\VisualStudio\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.Android\\RecorridoArboles.Android.csproj",
-      "packagesPath": "C:\\Users\\gvl19\\.nuget\\packages\\",
-      "outputPath": "S:\\Programming\\VisualStudio\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.Android\\obj\\",
+      "projectPath": "C:\\Users\\ExtremeTech\\source\\repos\\lul\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.Android\\RecorridoArboles.Android.csproj",
+      "packagesPath": "C:\\Users\\ExtremeTech\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ExtremeTech\\source\\repos\\lul\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\gvl19\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ExtremeTech\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2000,8 +2000,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "S:\\Programming\\VisualStudio\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.csproj": {
-              "projectPath": "S:\\Programming\\VisualStudio\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.csproj"
+            "C:\\Users\\ExtremeTech\\source\\repos\\lul\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.csproj": {
+              "projectPath": "C:\\Users\\ExtremeTech\\source\\repos\\lul\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.csproj"
             }
           }
         }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "S:\\Programming\\VisualStudio\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.csproj": {}
+    "C:\\Users\\ExtremeTech\\source\\repos\\lul\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.csproj": {}
   },
   "projects": {
-    "S:\\Programming\\VisualStudio\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.csproj": {
+    "C:\\Users\\ExtremeTech\\source\\repos\\lul\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\Programming\\VisualStudio\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.csproj",
+        "projectUniqueName": "C:\\Users\\ExtremeTech\\source\\repos\\lul\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.csproj",
         "projectName": "RecorridoArboles",
-        "projectPath": "S:\\Programming\\VisualStudio\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.csproj",
-        "packagesPath": "C:\\Users\\gvl19\\.nuget\\packages\\",
-        "outputPath": "S:\\Programming\\VisualStudio\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles\\obj\\",
+        "projectPath": "C:\\Users\\ExtremeTech\\source\\repos\\lul\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles.csproj",
+        "packagesPath": "C:\\Users\\ExtremeTech\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ExtremeTech\\source\\repos\\lul\\RecorridoArboles\\RecorridoArboles\\RecorridoArboles\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\gvl19\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ExtremeTech\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -67,7 +67,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
